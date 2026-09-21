@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张明 · 个人作品集</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">ZM.</a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#about" class="nav-link">关于</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#projects" class="nav-link">作品</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页 / Hero -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">你好,我是</p>
+            <h1 class="hero-name">张明</h1>
+            <h2 class="hero-title">
+                <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+            </h2>
+            <p class="hero-description">
+                热爱创造优雅的数字体验,擅长将复杂问题转化为简洁的解决方案。
+                专注于全栈开发与用户体验设计。
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">查看作品</a>
+                <a href="#contact" class="btn btn-outline">联系我</a>
+            </div>
+            <div class="hero-social">
+                <a href="#" aria-label="GitHub" class="social-link">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.4-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 .1.8 1.7 2.9 1.3.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                </a>
+                <a href="#" aria-label="LinkedIn" class="social-link">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.3A1.8 1.8 0 118.3 6.5 1.8 1.8 0 016.5 8.3zM19 19h-3v-4.7c0-1.1 0-2.5-1.5-2.5s-1.8 1.2-1.8 2.4V19h-3v-9h2.9v1.2a3.2 3.2 0 012.9-1.6c3 0 3.6 2 3.6 4.5z"/></svg>
+                </a>
+                <a href="#" aria-label="Twitter" class="social-link">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M22 5.8a8.5 8.5 0 01-2.4.7 4.2 4.2 0 001.8-2.3 8.5 8.5 0 01-2.7 1A4.2 4.2 0 0011.4 9a11.9 11.9 0 01-8.6-4.4 4.2 4.2 0 001.3 5.6A4.2 4.2 0 012.8 9v.1a4.2 4.2 0 003.4 4.1 4.2 4.2 0 01-1.9.1 4.2 4.2 0 003.9 2.9A8.5 8.5 0 012 18a11.9 11.9 0 006.4 1.9c7.7 0 11.9-6.4 11.9-11.9v-.5A8.5 8.5 0 0022 5.8z"/></svg>
+                </a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down" aria-label="向下滚动">
+            <span></span>
+        </a>
+    </section>
+
+    <!-- 关于 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <h2 class="section-title">关于我</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="image-wrapper">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20portrait%20of%20a%20young%20asian%20male%20developer%20with%20glasses%2C%20modern%20minimalist%20style%2C%20soft%20studio%20lighting%2C%20clean%20background&image_size=portrait_4_3" alt="张明的照片">
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <h3>用代码创造价值,用设计传递温度</h3>
+                    <p>
+                        我是一名拥有 5 年经验的全栈工程师,专注于构建高性能的 Web 应用与移动端产品。
+                        毕业于计算机科学专业,曾任职于多家科技公司,参与从 0 到 1 的产品孵化与迭代。
+                    </p>
+                    <p>
+                        我相信优秀的产品源于对细节的执着与对用户的共情。无论是前端架构、交互设计,
+                        还是后端服务、数据建模,我都追求优雅与高效的平衡。
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-num" data-count="50">0</span>
+                            <span class="stat-label">完成项目</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-count="5">0</span>
+                            <span class="stat-label">工作年限</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-count="28">0</span>
+                            <span class="stat-label">服务客户</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-count="12">0</span>
+                            <span class="stat-label">获得奖项</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">下载简历</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2 class="section-title">专业技能</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <h3>前端开发</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>HTML / CSS</span><span>95%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="95"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>JavaScript / TypeScript</span><span>90%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>React / Vue</span><span>88%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3>后端开发</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Node.js</span><span>85%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Python</span><span>80%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>数据库设计</span><span>78%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="78"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3>设计 & 工具</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>UI/UX 设计</span><span>82%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="82"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Figma / Sketch</span><span>88%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Docker / Git</span><span>85%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <h2 class="section-title">精选作品</h2>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="web">网站</button>
+                <button class="filter-btn" data-filter="app">应用</button>
+                <button class="filter-btn" data-filter="design">设计</button>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card reveal" data-category="web">
+                    <div class="project-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20elegant%20e-commerce%20website%20dashboard%20UI%2C%20clean%20minimalist%20design%2C%20soft%20purple%20and%20white%20color%20scheme&image_size=landscape_16_9" alt="电商平台项目">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web</span>
+                        <h3>云端电商平台</h3>
+                        <p>基于 React 与 Node.js 构建的全栈电商系统,支持百万级并发的购物体验。</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="app">
+                    <div class="project-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mobile%20fitness%20app%20UI%20design%20mockup%2C%20vibrant%20gradient%20interface%2C%20modern%20health%20tracking%20application&image_size=landscape_16_9" alt="健身应用项目">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">App</span>
+                        <h3>智能健身助手</h3>
+                        <p>结合 AI 算法的健身追踪应用,为用户提供个性化的训练计划与实时反馈。</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="design">
+                    <div class="project-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=brand%20identity%20design%20showcase%2C%20minimalist%20logo%20and%20visual%20system%2C%20elegant%20geometric%20shapes&image_size=landscape_16_9" alt="品牌设计项目">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Design</span>
+                        <h3>品牌视觉系统</h3>
+                        <p>为初创科技公司打造的完整品牌识别系统,涵盖 Logo、色彩、字体规范。</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="web">
+                    <div class="project-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=data%20visualization%20analytics%20dashboard%20interface%2C%20dark%20mode%20with%20neon%20charts%2C%20modern%20business%20intelligence%20tool&image_size=landscape_16_9" alt="数据可视化项目">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web</span>
+                        <h3>数据洞察平台</h3>
+                        <p>面向企业的实时数据分析与可视化平台,支持多维度筛选与自定义报表。</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="app">
+                    <div class="project-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=smart%20home%20automation%20mobile%20app%20interface%2C%20clean%20modern%20UI%2C%20warm%20color%20palette%2C%20device%20control%20screen&image_size=landscape_16_9" alt="智能家居项目">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">App</span>
+                        <h3>智能家居中枢</h3>
+                        <p>整合多品牌设备的智能家居控制应用,支持语音指令与场景自动化。</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="design">
+                    <div class="project-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mobile%20banking%20app%20UI%20kit%20design%2C%20modern%20fintech%20interface%2C%20clean%20cards%20and%20charts%2C%20blue%20gradient&image_size=landscape_16_9" alt="金融应用设计">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Design</span>
+                        <h3>金融应用 UI Kit</h3>
+                        <p>面向数字银行的一站式 UI 组件库,包含 80+ 个可复用的设计模块。</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">04</span>
+                <h2 class="section-title">联系我</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>有项目想要合作?</h3>
+                    <p>无论是产品开发、技术咨询,还是单纯想聊聊,都欢迎与我联系。我会在 24 小时内回复你。</p>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-icon">✉</span>
+                            <div>
+                                <span class="contact-label">邮箱</span>
+                                <a href="mailto:zhangming@example.com">zhangming@example.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="contact-icon">☎</span>
+                            <div>
+                                <span class="contact-label">电话</span>
+                                <a href="tel:+8613800000000">+86 138 0000 0000</a>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="contact-icon">⚲</span>
+                            <div>
+                                <span class="contact-label">地址</span>
+                                <span>中国 · 上海市浦东新区</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">你的姓名</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">邮箱地址</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">主题</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required></textarea>
+                        <label for="message">留言内容</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <a href="#home" class="footer-logo">ZM.</a>
+            <p class="footer-text">© 2026 张明. 用心打造,版权所有.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
