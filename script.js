@@ -1,3 +1,16 @@
+// ====== 主题切换 ======
+const themeToggle = document.getElementById('themeToggle');
+
+// 初始化主题:优先读取 localStorage,默认深色
+const savedTheme = localStorage.getItem('theme') || 'dark';
+document.documentElement.setAttribute('data-theme', savedTheme);
+
+themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    localStorage.setItem('theme', currentTheme);
+});
+
 // ====== 导航栏滚动效果 ======
 const navbar = document.getElementById('navbar');
 const navLinks = document.querySelectorAll('.nav-link');
